@@ -1,0 +1,109 @@
+.dialog-container {
+  z-index: 99999999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: fixed;
+  top: -100px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--white);
+  opacity: 0;
+  visibility: hidden;
+  transition: all .2s linear;
+}
+
+.dialog-container.open {
+  opacity: 1;
+  visibility: visible;
+  top: 0;
+}
+
+.dialog-container .dialog-header {
+  color: var(--black);
+  border-bottom: 1px var(--black) solid;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px;
+  width: 100%;
+}
+
+.dialog-container .dialog-header .title {
+  color: var(--black);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.dialog-container .dialog-header .title svg {
+  margin-right: 5px;
+}
+
+.dialog-container .dialog-header button {
+  margin-right: -7px;
+}
+
+.dialog-container .dialog-content {
+  padding: 14px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.dialog-container .dialog-content .action-text {
+  background-color: #cff4fc;
+  border-color: #b6effb;
+  color: #055160;
+  font-size: 15px;
+  padding: 8px;
+  border-radius: 5px;
+  line-height: 1.18;
+  margin-bottom: 15px;
+}
+
+.dialog-container .dialog-content .action-text span {
+  font-weight: 500;
+  color: #055160;
+}
+
+.dialog-form-content {}
+
+.dialog-form-content form {
+  color: #333;
+}
+
+.icon-loading-button {
+  width: 15px;
+  height: 15px;
+  margin-left: 25px;
+}
+
+.icon-loading-button svg {
+  width: 15px;
+  height: 15px;
+}
+
+.icon-loading-button svg circle {
+  stroke: white;
+}
+
+.change-cellphone {
+  color: gray;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 8px;
+  font-weight: 600;
+  text-align: center;
+  width: fit-content;
+  margin: 16px auto;
+  border: 1px gray solid;
+  padding: 8px 32px;
+  border-radius: 5px;
+}

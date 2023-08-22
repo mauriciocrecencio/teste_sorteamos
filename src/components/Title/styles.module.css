@@ -1,0 +1,22 @@
+.title-container {
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.title-container .title-content {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+
+.title-container .title-content .title {
+  font-size: 20px;
+  padding-right: 15px;
+  font-weight: 600;
+}
+
+.title-container .title-content .title-sub {
+  font-size: 13px;
+  color: var(--subTextCard);
+}

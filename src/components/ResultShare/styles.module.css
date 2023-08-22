@@ -1,0 +1,33 @@
+.container-result-share {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.share-links {
+  display: flex;
+  gap: 5px;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.result p {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.result span {
+  --bs-bg-opacity: 0.5;
+  font-size: 0.8em;
+  font-weight: 600;
+  background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.2rem;
+  margin-left: 0.25rem;
+  color: #212529;
+}

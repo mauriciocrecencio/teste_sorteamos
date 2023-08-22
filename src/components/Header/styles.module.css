@@ -1,0 +1,130 @@
+.container {
+  box-sizing: border-box;
+  margin: auto;
+  max-width: var(--width);
+  padding: 0 15px;
+  width: 100%;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: var(--headerBackground);
+  z-index: 9999;
+  width: 100%;
+  margin: auto;
+}
+
+.header .header-container {
+  max-width: var(--width);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 15px;
+  margin: auto;
+}
+
+.header .header-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.header .logo {
+  width: 150px;
+  display: block;
+}
+
+.header .logo a {
+  display: block;
+  /* padding-top: 10px; */
+}
+
+.header .logo a img {
+  width: 100%;
+  display: block;
+  border: 0;
+}
+
+.header .toggle-menu svg {
+  font-size: 28px;
+  fill: var(--cardBackground);
+}
+
+.header .menu {
+  position: absolute;
+  background-color: var(--black);
+  height: calc(100vh - 70px);
+  width: 100%;
+  top: 70px;
+  left: -120vw;
+  transition: left 0.2s linear;
+  padding: 30px 15px;
+  z-index: 9999;
+}
+
+.header .menu ul {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.header .menu ul li {
+  padding: 15px 0px;
+}
+
+.header .menu ul li:first-child {
+  padding-top: 0;
+}
+
+.header .menu ul li a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--cardBackground);
+}
+
+.header .menu ul li a svg {
+  margin-right: 15px;
+  font-size: 20px;
+  fill: var(--cardBackground);
+}
+
+.header .menu.opened {
+  left: 0;
+}
+
+.header .login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .login .login-link {
+  padding: 10px;
+  background-color: var(--cardBackground);
+  border-radius: 20px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.header .login .login-link svg {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.header .name-user-logged {
+  margin-bottom: 30px;
+}
+
+.header .name-user-logged h2 {
+  color: #fff;
+  font-weight: 500;
+}

@@ -1,0 +1,121 @@
+/* title */
+.title-payment-container {
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+.title-payment-container .title-payment-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-payment-container .title-payment-content .title-payment-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-payment-container .title-payment-content .title-payment-icon svg {
+  font-size: 49px;
+}
+
+.title-payment-container .title-payment-content .title-payment-icon svg.yellow,
+.title-payment-container .title-payment-content .title-payment-icon svg.yellow path {
+  --bs-text-opacity: 1;
+  color: var(--bs-warning)
+}
+
+.title-payment-container .title-payment-content .title-payment-icon svg.green,
+.title-payment-container .title-payment-content .title-payment-icon svg.green path {
+  --bs-text-opacity: 1;
+  color: var(--bs-success)
+}
+
+.title-payment-container .title-payment-content .title-payment-icon svg.red,
+.title-payment-container .title-payment-content .title-payment-icon svg.red path {
+  --bs-text-opacity: 1;
+  color: var(--bs-danger)
+}
+
+.title-payment-container .title-payment-content .title-payment-texts {
+  margin-left: 5px;
+}
+
+.title-payment-container .title-payment-content .title-payment-texts .title-payment-text {
+  font-size: 16.68px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 3px;
+}
+
+.title-payment-container .title-payment-content .title-payment-texts .title-payment-sub {
+  font-size: 13px;
+}
+
+/* title */
+
+
+
+
+
+
+
+.meter {
+  height: 13px;
+  background: dimgray;
+  border-radius: 8px;
+}
+
+.meter>span {
+  display: block;
+  height: 100%;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.meter>span:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(-45deg,
+          rgba(255, 255, 255, 0.2) 25%,
+          transparent 25%,
+          transparent 50%,
+          rgba(255, 255, 255, 0.2) 50%,
+          rgba(255, 255, 255, 0.2) 75%,
+          transparent 75%,
+          transparent);
+  z-index: 1;
+  background-size: 50px 50px;
+  animation: move 2s linear infinite;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  overflow: hidden;
+}
+
+@keyframes move {
+  0% {
+      background-position: 0 0;
+  }
+
+  100% {
+      background-position: 50px 50px;
+  }
+}
+
+.yellow>span {
+  background-image: linear-gradient(var(--bs-orange), var(--bs-yellow));
+}
+
+.red>span {
+  background-image: linear-gradient(var(--bs-red), var(--bs-red));
+}

@@ -1,0 +1,541 @@
+/* card card */
+.card-container {
+  padding: 0;
+}
+
+.card-container .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.card-container .card-content .card-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--cardBackground);
+  color: #333333;
+  padding: 4px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.card-container .card-content .card-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.card-container .card-content .card-item .card-image {
+  overflow: hidden;
+  height: 90px;
+  width: 90px;
+  margin-right: 10px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.card-container .card-content .card-item .card-image.winner {
+  height: 56px;
+  width: 56px;
+}
+
+.card-container .card-content .card-item .card-image span {
+  border-radius: 10px;
+}
+
+.card-container .card-content .card-item .card-texts {
+  flex: 1;
+}
+
+.card-container .card-content .card-item .card-texts.winner-texts p {
+  font-size: 14px;
+  opacity: 0.8;
+  -webkit-line-clamp: 1 !important;
+}
+
+.card-container .card-content .card-item .card-texts.winner-texts h2 {
+  -webkit-line-clamp: 1 !important;
+}
+
+.card-container .card-content .card-item .card-texts h2 {
+  font-size: 16px;
+  -webkit-line-clamp: 1 !important;
+  margin-bottom: 0;
+  line-height: 1;
+  font-weight: 500;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-width: 97%;
+  width: 100%;
+}
+
+.card-container .card-content .card-item .card-texts p {
+  font-size: 12px;
+  max-width: 97%;
+  width: 100%;
+  -webkit-line-clamp: 1 !important;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.2;
+}
+
+.card-container .card-content .card-item .card-texts p:not(:last-child) {
+  margin: 2px 0px;
+}
+
+.card-container .card-content .card-item.my-numbers-page {
+  align-items: flex-start;
+}
+
+.separate-cards {
+  margin: 0 0 5px 0;
+}
+
+.winner-card .card-texts strong {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.card-container .card-content .first-card-item {
+  flex-direction: column;
+  padding: 0;
+}
+
+.first-card-
+
+.card-container .card-content .first-card-item .card-texts h2 {
+  max-width: 100%;
+}
+
+.card-container .card-content .first-card-item .card-image {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.img-container img {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-container .card-content .first-card-item .card-image .swiper-wrapper {
+  transform: initial !important;
+}
+
+.swiper-backface-hidden .swiper-slide {
+  /* transform: initial !important; */
+  backface-visibility: initial !important;
+}
+
+.card-container .card-content .first-card-item .card-image img {
+  border-radius: 5px;
+  font-size: 0.01px;
+  color: transparent;
+}
+
+.card-container .card-content .first-card-item .card-texts {
+  width: 100%;
+  padding: 10px 5px;
+}
+
+/* flag */
+.card-container .card-content .card-item.card-flag {
+  position: relative;
+}
+
+.card-container .card-content .card-item.card-flag::after {
+  font-family: swiper-icons;
+  position: absolute;
+  content: "next";
+  font-size: 13px;
+  color: var(--white);
+  right: 8px;
+}
+
+.not-flag::after {
+  content: "" !important;
+}
+
+/* user */
+.card-container .card-content .card-item.user .card-image {
+  height: 70px;
+  width: 70px;
+}
+
+.card-container .card-content .card-item.user .card-texts h2 {
+  -webkit-line-clamp: 1 !important;
+  font-size: 20px;
+}
+
+.card-container .card-content .card-item.user .card-texts h2.user-name {
+  text-transform: capitalize;
+}
+
+.card-container .card-content .card-item.user .card-texts p input {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  width: 100%;
+}
+
+/* order */
+
+.card-texts-orders {
+  margin: 10px 0;
+}
+
+/* order */
+
+/* card card */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.swiper-slide {
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  /* border-radius: 5px;
+  display: block; */
+  width: 100%;
+  /* height: 100%; */
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: var(--sorteamos-primariaLinkHover) !important;
+  font-size: 20px !important;
+}
+
+/* sorteio ganho */
+
+.raffle-win {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.raffle-win img {
+  position: absolute;
+  inset: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  border: none;
+  margin: auto;
+  display: block;
+  width: 0px;
+  height: 0px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  border-radius: 50rem;
+}
+
+.price-container {
+  margin: 17px 0;
+  text-align: center;
+}
+
+.price-container .price-content {}
+
+.price-container .price-content .price-item {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.price-container .price-content .price-item span {
+  letter-spacing: 0.8px;
+  background-color: var(--headerBackground);
+  padding: 5px 6px;
+  border-radius: 5px;
+  margin-left: 5px;
+  color: var(--cardBackground);
+}
+
+.price-container .price-content .price-item span small {
+  font-size: 13px;
+}
+
+.product-buttons-container {
+  width: 100%;
+}
+
+.product-buttons-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product-buttons-base {}
+
+.product-buttons-base svg {
+  fill: var(--gray);
+  font-size: 35px;
+}
+
+.product-buttons-input {
+  flex: 1;
+  text-align: center;
+}
+
+.product-buttons-input input {
+  width: 95%;
+  margin: auto;
+  background-color: transparent;
+  border: 1px var(--gray) solid;
+  border-radius: 5px;
+  text-align: center;
+  padding: 6px;
+  font-size: 22px;
+}
+
+.product-buttons-base {}
+
+.result {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.result p {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.result span {
+  --bs-bg-opacity: 0.5;
+  font-size: 0.8em;
+  font-weight: 600;
+  background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.2rem;
+  margin-left: 0.25rem;
+  color: #212529;
+}
+
+.controls {
+  padding: 15px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: var(--cardBackground);
+}
+
+.select-quantity {
+  text-align: center;
+  font-size: 14px;
+}
+
+.container-quantity {
+  width: 100%;
+  padding: 25px 0px 15px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.content-quantity {
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  cursor: pointer;
+  border-radius: 5px;
+  min-width: 130px;
+  min-height: 80px;
+  margin: 0 0.5rem 0.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.number-select {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.content-quantity small {
+  font-weight: 500;
+}
+
+.content-quantity p {
+  font-size: 13px;
+}
+
+.content-quantity.most-popular {
+  position: relative;
+  border: 2px solid var(--success);
+  background-color: var(--cardBackground) !important;
+}
+
+.most-popular:before {
+  content: "Mais popular";
+  background-color: var(--success);
+  border-radius: 5px;
+  position: absolute;
+  font-size: 0.8em;
+  padding: 4px;
+  width: 110px;
+  color: #fff;
+  top: -14px;
+  text-align: center;
+}
+
+.winner-container {
+  background: var(--success);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.image-winner {
+  flex: 0 0 auto;
+  max-width: 100%;
+}
+
+.image-winner img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50rem;
+}
+
+.winner-infos {
+  width: 100%;
+  max-width: 100%;
+  margin-left: 15px;
+}
+
+.winner-infos h5 {
+  color: var(--cardBackground);
+  font-size: 1.25rem;
+  font-weight: 600;
+  -webkit-line-clamp: 1 !important;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.winner-infos p {
+  color: var(--cardBackground);
+  font-size: 0.875rem;
+}
+
+.description-container {
+  width: 100%;
+  background: var(--cardBackground);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+
+}
+
+.scroll-description {
+  height: 100%;
+  max-height: 250px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-wrap: wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.css-yiavyu-MuiBackdrop-root-MuiDialog-backdrop {
+  z-index: 0;
+}
+
+.container-result-share {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.share-links {
+  display: flex;
+  gap: 5px;
+}
+
+.discount-container {
+  margin-bottom: 20px;
+}
+
+.discount-content {
+  padding: 10px;
+  background-color: var(--white);
+  border-radius: 5px;
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.discount-item {
+  width: fit-content;
+  padding: 4px 10px;
+  background-color: var(--success);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.discount-item p {
+  color: var(--white);
+  font-size: 12.8px;
+  font-weight: 600;
+}
+
+.card-container .card-content .card-item .card-image img {
+  inset: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  border: none;
+  margin: auto;
+  display: flex;
+  /* width: 0px;
+  height: 0px; */
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+  background: transparent;
+}
+
+.card-image img {
+  border-radius: 5px;
+  color: transparent;
+  font-size: .01px;
+}
+

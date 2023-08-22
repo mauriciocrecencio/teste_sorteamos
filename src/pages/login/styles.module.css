@@ -1,0 +1,14 @@
+.info-form-text.lightyellow {
+  background-color: #fff3cd;
+  border-color: #ffecb5;
+  color: #664d03;
+}
+.info-form-text {
+  align-items: center;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  font-size: 13.5px;
+  justify-content: flex-start;
+  padding: 8px;
+}

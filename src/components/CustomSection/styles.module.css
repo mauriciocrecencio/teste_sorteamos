@@ -1,0 +1,90 @@
+.card-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--cardBackground);
+  color: #333333;
+  padding: 4px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.card-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.card-item .card-image {
+  overflow: hidden;
+  height: 90px;
+  width: 90px;
+  margin-right: 10px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+
+/* Verificar se ta pegando */
+.card-item .card-image.winner {
+  height: 56px;
+  width: 56px;
+}
+
+.card-item .card-image span {
+  border-radius: 10px;
+}
+
+.card-item .card-texts {
+  flex: 1;
+}
+
+.card-item .card-texts.winner-texts p {
+  font-size: 14px;
+  opacity: 0.8;
+  -webkit-line-clamp: 1 !important;
+}
+
+.card-item .card-texts.winner-texts h2 {
+  -webkit-line-clamp: 1 !important;
+}
+
+.winner-card .card-texts strong {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.first-card-item {
+  flex-direction: column;
+  padding: 0;
+}
+
+
+.first-card-item .card-image {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+
+.first-card-item .card-image img {
+  border-radius: 5px;
+  font-size: 0.01px;
+  color: transparent;
+  object-fit: cover;
+}
+
+ .card-flag .card-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-position: center;
+}
+
+.first-card-item section {
+  padding: 10px 5px;
+}
+
+.card-flag {
+  align-items: flex-start;
+}

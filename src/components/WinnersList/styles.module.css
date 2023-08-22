@@ -1,0 +1,442 @@
+.winners-container {
+  margin-top: 20px;
+}
+
+.winners-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.winner-item {
+  display: grid;
+  grid-template-columns: 70px auto 50px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.winner-item .card-user-image {
+  padding: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.winner-item .card-user-image img {
+  border-radius: 10px;
+  width: 55px;
+  height: 55px;
+}
+
+.winner-item .card-product-image {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.winner-item .card-product-image img {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+
+.winner-item-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3px;
+}
+
+.winner-item-information h3 {
+  font-weight: 600;
+}
+
+/* TODO: ajustar seletor para puro */
+/* .winner-item-information p, b {
+  font-size: .90em;
+  opacity: .88;
+}
+
+b {
+  font-weight: 600;
+} */
+
+/* card card */
+.card-container {
+  padding: 0;
+}
+
+.card-container .card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.card-container .card-content .card-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--cardBackground);
+  color: #333333;
+  padding: 4px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.card-container .card-content .card-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.card-container .card-content .card-item .card-image {
+  overflow: hidden;
+  height: 90px;
+  width: 90px;
+  margin-right: 10px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.card-container .card-content .card-item .card-image.winner {
+  height: 56px;
+  width: 56px;
+}
+
+.card-container .card-content .card-item .card-image span {
+  border-radius: 10px;
+}
+
+.card-container .card-content .card-item .card-texts {
+  flex: 1;
+}
+
+.card-container .card-content .card-item .card-texts.winner-texts p {
+  font-size: 14px;
+  opacity: 0.8;
+  -webkit-line-clamp: 1 !important;
+}
+
+.card-container .card-content .card-item .card-texts.winner-texts h2 {
+  -webkit-line-clamp: 1 !important;
+}
+
+.card-container .card-content .card-item .card-texts h2 {
+  font-size: 16px;
+  -webkit-line-clamp: 1 !important;
+  margin-bottom: 0;
+  line-height: 1;
+  font-weight: 500;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-width: 97%;
+  width: 100%;
+}
+
+.card-container .card-content .card-item .card-texts p {
+  font-size: 12px;
+  max-width: 97%;
+  width: 100%;
+  -webkit-line-clamp: 1 !important;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.2;
+}
+
+.card-container .card-content .card-item .card-texts p:not(:last-child) {
+  margin: 2px 0px;
+}
+
+.card-container .card-content .card-item.my-numbers-page {
+  align-items: flex-start;
+}
+
+.separate-cards {
+  margin: 0 0 5px 0;
+}
+
+.winner-card .card-texts strong {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+/* .winner-card {
+  margin-top: 20px;
+} */
+
+/* first card */
+
+.card-container .card-content .first-card-item {
+  flex-direction: column;
+  padding: 0;
+}
+
+.card-container .card-content .first-card-item .card-texts h2 {
+  max-width: 100%;
+}
+
+.card-container .card-content .first-card-item .card-image {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.img-container img {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-container .card-content .first-card-item .card-image .swiper-wrapper {
+  transform: initial !important;
+}
+
+.swiper-backface-hidden .swiper-slide {
+  /* transform: initial !important; */
+  backface-visibility: initial !important;
+}
+
+.card-container .card-content .first-card-item .card-image img {
+  border-radius: 5px;
+  font-size: 0.01px;
+  color: transparent;
+}
+
+.card-container .card-content .first-card-item .card-texts {
+  width: 100%;
+  padding: 10px 5px;
+}
+
+/* flag */
+.card-container .card-content .card-item.card-flag {
+  position: relative;
+}
+
+.card-container .card-content .card-item.card-flag::after {
+  font-family: swiper-icons;
+  position: absolute;
+  content: "next";
+  font-size: 13px;
+  color: var(--white);
+  right: 8px;
+}
+
+.not-flag::after {
+  content: "" !important;
+}
+
+/* user */
+.card-container .card-content .card-item.user .card-image {
+  height: 70px;
+  width: 70px;
+}
+
+.card-container .card-content .card-item.user .card-texts h2 {
+  -webkit-line-clamp: 1 !important;
+  font-size: 20px;
+}
+
+.card-container .card-content .card-item.user .card-texts h2.user_name {
+  text-transform: capitalize;
+}
+
+.card-container .card-content .card-item.user .card-texts p input {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  width: 100%;
+}
+
+/* order */
+
+.card-texts-orders {
+  margin: 10px 0;
+}
+
+/* order */
+
+/* card card */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.swiper-slide {
+  border-radius: 5px;
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  /* border-radius: 5px;
+  display: block; */
+  width: 100%;
+  /* height: 100%; */
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: var(--sorteamos-primariaLinkHover) !important;
+  font-size: 20px !important;
+}
+
+/* sorteio ganho */
+
+.raffle-win {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.raffle-win img {
+  position: absolute;
+  inset: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  border: none;
+  margin: auto;
+  display: block;
+  width: 0px;
+  height: 0px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  border-radius: 50rem;
+}
+
+.blink-base {
+  font-size: 11.1px;
+  max-width: 97%;
+  display: inline-block;
+  padding: 0.35em 0.65em;
+  font-weight: 600;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+}
+
+.blink-bg-success {
+  background-color: rgba(25 135 84 / 50%) !important;
+}
+
+.blink-bg-done {
+  background-color: var(--subTextCard);
+}
+
+.blink-bg-warn {
+  background-color: #ffd558;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--cardBackground);
+  color: #333333;
+  padding: 4px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.card-item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.card-item .card-image {
+  overflow: hidden;
+  height: 90px;
+  width: 90px;
+  margin-right: 10px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+
+/* Verificar se ta pegando */
+.card-item .card-image.winner {
+  height: 56px;
+  width: 56px;
+}
+
+.card-item .card-image span {
+  border-radius: 10px;
+}
+
+.card-item .card-texts {
+  flex: 1;
+}
+
+.card-item .card-texts.winner-texts p {
+  font-size: 14px;
+  opacity: 0.8;
+  -webkit-line-clamp: 1 !important;
+}
+
+.card-item .card-texts.winner-texts h2 {
+  -webkit-line-clamp: 1 !important;
+}
+
+.winner-card .card-texts strong {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.first-card-item {
+  flex-direction: column;
+  padding: 0;
+}
+
+
+.first-card-item .card-image {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+
+.first-card-item .card-image img {
+  border-radius: 5px;
+  font-size: 0.01px;
+  color: transparent;
+  object-fit: cover;
+}
+
+ .card-flag .card-image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-position: center;
+}
+
+.first-card-item section {
+  padding: 10px 5px;
+}
+
+.card-flag {
+  align-items: flex-start;
+}

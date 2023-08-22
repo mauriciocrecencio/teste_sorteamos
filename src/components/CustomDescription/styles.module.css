@@ -1,0 +1,44 @@
+.card-texts {
+  width: 100%;
+  flex: 1 1;
+}
+
+.first-card-item .card-texts {
+}
+
+.card-texts h2 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 0;
+  max-width: 100%;
+  -webkit-line-clamp: 1!important;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    max-width: 97%;
+    overflow: hidden;
+}
+
+.card-texts p:not(:last-child) {
+  margin: 2px 0;
+}
+
+
+
+.card-texts p {
+  font-size: 12px;
+  line-height: 1.2;
+  -webkit-line-clamp: 1!important;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    max-width: 97%;
+    overflow: hidden;
+}
+
+.card-texts-orders {
+  margin: 10px 0;
+}
+
+.my-numbers-page {
+  align-items: flex-start;
+}

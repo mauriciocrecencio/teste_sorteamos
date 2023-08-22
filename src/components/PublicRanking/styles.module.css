@@ -1,0 +1,31 @@
+.public-ranking {
+  margin-top: 20px;
+}
+
+.public-ranking li {
+  display: grid;
+  grid-template-columns: 30px auto;
+  margin: 25px 0px;
+  gap: 15px;
+  align-items: center;
+}
+
+.public-ranking li:last-child {
+  margin-bottom: 0px;
+}
+
+.public-ranking li .item-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.public-ranking li .item-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.disabled-button {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
