@@ -7,6 +7,7 @@ import { getStaticData } from '@/api/global'
 import { useStaticData } from '@/store/staticStore'
 import { useUserStore } from '@/store/userStore'
 import { Router, useRouter } from 'next/router'
+import Head from 'next/head'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
@@ -54,7 +55,9 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
 
   return (
     <StrictMode>
-      <meta property="og:type" content="website" />
+      <Head>
+        <meta property="og:type" content="website" />
+      </Head>
       <div className={montserrat.className}>
         <Layout>
           {/* Colocar componente de Loading talvez */}
