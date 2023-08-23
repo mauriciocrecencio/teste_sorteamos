@@ -18,7 +18,7 @@
 .capitalizadora-beneficiario-container {
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
   margin-top: 16px;
 }
 

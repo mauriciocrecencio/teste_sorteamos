@@ -24,7 +24,7 @@ const Usability = (props) => {
 
       {image && (
         <>
-          <meta property="og:image" content={image} />
+          <meta property="og:image" content={image} itemProp="image" />
           <meta property="og:image:type" content="image/jpeg" />
           <meta property="og:image:width" content="600" />
           <meta property="og:image:height" content="600" />

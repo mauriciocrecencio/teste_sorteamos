@@ -54,6 +54,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
 
   return (
     <StrictMode>
+      <meta property="og:type" content="website" />
       <div className={montserrat.className}>
         <Layout>
           {/* Colocar componente de Loading talvez */}
